@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-100">
+<body id="bg-color-change" class="bg-slate-100">
     <header>
         <!-- the nav bar -->
         <nav class=" ">
@@ -25,7 +25,7 @@
                         <p id="add-num" class="text-3xl font-bold">23</p>
                     </div>
                     <div class="p-2">
-                        <img class="p-4 bg-slate-100 rounded-full" src="assets/theme-btn.png" alt="">
+                        <img id="theme-btn" class="p-4 bg-slate-100 rounded-full" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
             </div>
@@ -57,12 +57,11 @@
                       </div>
                       <!-- date -->
                        <div class=" bg-slate-100 w-[23%] flex justify-center items-center gap-x-5 rounded-xl">
-                       <div class="p-3 bg-white rounded-full">
-                        <img src="assets/calender.png" alt="">
+                       <div class="p-3 bg-white rounded-full ml-2">
+                        <img class="" src="assets/calender.png" alt="">
                        </div>
                         <div>
-                            <p class="text-[18px]">Wed ,</p>
-                            <p class="text-[18px] font-bold">Jul 28 2025 </p>
+                            <p id="date" class="text-[18px] font-bold"> </p>
                         </div>
                        </div>
                 </div>

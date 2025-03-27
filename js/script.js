@@ -179,3 +179,16 @@ document.getElementById('history-cleaning').addEventListener('click',function(){
 document.getElementById('discover-switch').addEventListener('click',function(){
     window.location.href='main.html';
 })
+// bg-color-change
+document.getElementById('theme-btn').addEventListener('click', function () {
+    const bgColor = document.getElementById('bg-color-change');
+    let color = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+    bgColor.style.backgroundColor = color;
+});
+// dynamic time
+function showDate() {
+    const today = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+document.getElementById("date").innerText = today.toLocaleDateString("en-US", options);
+}
+showDate();
