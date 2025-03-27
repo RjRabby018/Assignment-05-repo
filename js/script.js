@@ -1,5 +1,12 @@
 // first i will do the click opertaion on complete btn and will add or substract and disable the complete btn
    
+// necessary function
+function showTime() {
+    const now = new Date();
+    return now.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+}
+
+
     // for clicking btn 01
 document.getElementById('Completed-btn-1').addEventListener('click',function(){
     const num1= document.getElementById('substract-num').innerText;
@@ -13,13 +20,15 @@ document.getElementById('Completed-btn-1').addEventListener('click',function(){
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
     this.style.opacity = "0.2";
+    // creating dynamic time for history
+    const currentTime = showTime();
     // giving history
     const task=document.getElementById('task-01').innerText;
     const container=document.getElementById('history-container');
 
     const p=document.createElement('p');
     p.innerText=`
-    You have Complete The Task ${task} at 12:48:15 PM
+    You have Complete The Task ${task} at ${currentTime} 
     `
     p.style.backgroundColor='lightgray';
     p.style.margin='16px';
@@ -41,13 +50,15 @@ document.getElementById('Completed-btn-2').addEventListener('click',function(){
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
     this.style.opacity = "0.2";
+    // creating dynamic time for history
+    const currentTime = showTime();
     // giving history
     const task=document.getElementById('task-02').innerText;
     const container=document.getElementById('history-container');
 
     const p=document.createElement('p');
     p.innerText=`
-    You have Complete The Task ${task} at 12:48:15 PM
+    You have Complete The Task ${task} at ${currentTime} 
     `
     p.style.backgroundColor='lightgray';
     p.style.margin='16px';
@@ -69,13 +80,16 @@ document.getElementById('Completed-btn-3').addEventListener('click',function(){
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
     this.style.opacity = "0.2";
+    // creating dynamic time for history
+    const currentTime = showTime();
+    
     // giving history
     const task=document.getElementById('task-03').innerText;
     const container=document.getElementById('history-container');
 
     const p=document.createElement('p');
     p.innerText=`
-    You have Complete The Task ${task} at 12:48:15 PM
+    You have Complete The Task ${task} at ${currentTime} 
     `
     p.style.backgroundColor='lightgray';
     p.style.margin='16px';
@@ -97,13 +111,15 @@ document.getElementById('Completed-btn-4').addEventListener('click',function(){
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
     this.style.opacity = "0.2";
+    // creating dynamic time for history
+    const currentTime = showTime();
     // giving history
     const task=document.getElementById('task-04').innerText;
     const container=document.getElementById('history-container');
 
     const p=document.createElement('p');
     p.innerText=`
-    You have Complete The Task ${task} at 12:48:15 PM
+    You have Complete The Task ${task} at ${currentTime} 
     `
     p.style.backgroundColor='lightgray';
     p.style.margin='16px';
@@ -125,13 +141,15 @@ document.getElementById('Completed-btn-5').addEventListener('click',function(){
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
     this.style.opacity = "0.2";
+    // creating dynamic time for history
+    const currentTime = showTime();
     // giving history
     const task=document.getElementById('task-05').innerText;
     const container=document.getElementById('history-container');
 
     const p=document.createElement('p');
     p.innerText=`
-    You have Complete The Task ${task} at 12:48:15 PM
+    You have Complete The Task ${task} at ${currentTime} 
     `
     p.style.backgroundColor='lightgray';
     p.style.margin='16px';
@@ -153,13 +171,15 @@ document.getElementById('Completed-btn-6').addEventListener('click',function(){
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
     this.style.opacity = "0.2";
+    // creating dynamic time for history
+    const currentTime = showTime();
     // giving history
     const task=document.getElementById('task-06').innerText;
     const container=document.getElementById('history-container');
 
     const p=document.createElement('p');
     p.innerText=`
-    You have Complete The Task ${task} at 12:48:15 PM
+    You have Complete The Task ${task} at ${currentTime} 
     `
     p.style.backgroundColor='lightgray';
     p.style.margin='16px';
