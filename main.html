@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QNA section</title>
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-slate-100">
+    <header>
+        <nav>
+            <div class="flex h-24 items-center justify-between p-6 bg-white w-[1256px]  mx-auto rounded-xl">
+                <div class="flex gap-x-2 justify-between items-center h-16">
+                    <img src="assets/logo.png" alt="">
+                    <h3 class="text-4xl">Dev <span class="font-bold">Board</span></h3>
+                </div>
+                <div>
+                    <button id="return-back" class="bg-blue-700 flex text-center text-white p-3 rounded-lg">Back to Desk</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="text-center text-4xl font-bold mt-4 mb-4">Blog</h1>
+            <div class="w-[1256px]  mx-auto ">
+                <div class="bg-white mb-8 py-3 px-2">
+                    <h class="text-2xl font-medium">Question-1: What are the different ways to select an element in the DOM?</h>
+                    <p class="border-b border-dashed border-gray-500 mt-3"></p>
+                    <p class="text-xl text-gray-600 mt-4 ">The different ways to select an element in the DOM are getElementById(), getElementsByClassName(), querySelector(), or querySelectorAll().</p>
+                </div>
+                <div class="bg-white mb-8 py-3 px-2">
+                    <h class="text-2xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h>
+                    <p class="border-b border-dashed border-gray-500 mt-3"></p>
+                    <p class="text-xl text-gray-600 mt-4">The difference are innerHTML gets HTML content, and textContent returns all text including hidden elements.</p>
+                </div>
+                <div class="bg-white mb-8 py-3 px-2">
+                    <h class="text-2xl font-medium">Question-3: What is event delegation in the DOM?</h>
+                    <p class="border-b border-dashed border-gray-500 mt-3"></p>
+                    <p class="text-xl text-gray-600 mt-4"> It’s when you attach a single event listener to a parent element to handle events for its child elements.</p>
+                </div>
+                <div class="bg-white mb-8 py-3 px-2">
+                    <h class="text-2xl font-medium">Question-4: What is event bubbling in the DOM?</h>
+                    <p class="border-b border-dashed border-gray-500 mt-3"></p>
+                    <p class="text-xl text-gray-600 mt-4"> It’s when an event starts at the target element and propagates up through its ancestors.</p>
+                </div>
+                <div class="bg-white mb-8 py-3 px-2">
+                    <h class="text-2xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</h>
+                    <p class="border-b border-dashed border-gray-500 mt-3"></p>
+                    <p class="text-xl text-gray-600 mt-4">To create, add, and remove elements using JavaScript are createElement() to create, appendChild() to add, and removeChild() to remove elements.</p>
+                </div>
+            </div>
+           
+        </section>
+    </main>
+    <script src="js/test.js"></script>
+</body>
+</html>
