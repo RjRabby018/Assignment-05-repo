@@ -5,8 +5,6 @@ function showTime() {
     const now = new Date();
     return now.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
 }
-
-
     // for clicking btn 01
 document.getElementById('Completed-btn-1').addEventListener('click',function(){
     const num1= document.getElementById('substract-num').innerText;
@@ -15,7 +13,7 @@ document.getElementById('Completed-btn-1').addEventListener('click',function(){
     const convertedNum2=parseInt(num2);
     const substract=convertedNum1-1;
     const addition=convertedNum2+1;
-
+    alert('Board updated successfully');
     document.getElementById('substract-num').innerText=substract;
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
@@ -34,7 +32,7 @@ document.getElementById('Completed-btn-1').addEventListener('click',function(){
     p.style.margin='16px';
     p.style.borderRadius='12px';
     p.style.textAlign='center';
-    p.style.paddingTop='0px';
+    p.style.padding='10px';
     container.appendChild(p);
 })
 // for clicking btn 02
@@ -45,7 +43,7 @@ document.getElementById('Completed-btn-2').addEventListener('click',function(){
     const convertedNum2=parseInt(num2);
     const substract=convertedNum1-1;
     const addition=convertedNum2+1;
-
+    alert('Board updated successfully');
     document.getElementById('substract-num').innerText=substract;
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
@@ -64,7 +62,9 @@ document.getElementById('Completed-btn-2').addEventListener('click',function(){
     p.style.margin='16px';
     p.style.borderRadius='12px';
     p.style.textAlign='center';
-    p.style.paddingTop='0px';
+    p.style.padding='10px';
+    p.style.display='flex';
+    p.style.alignItems='center';
     container.appendChild(p);
 })
 // for clicking btn 03
@@ -75,7 +75,7 @@ document.getElementById('Completed-btn-3').addEventListener('click',function(){
     const convertedNum2=parseInt(num2);
     const substract=convertedNum1-1;
     const addition=convertedNum2+1;
-
+    alert('Board updated successfully');
     document.getElementById('substract-num').innerText=substract;
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
@@ -95,7 +95,7 @@ document.getElementById('Completed-btn-3').addEventListener('click',function(){
     p.style.margin='16px';
     p.style.borderRadius='12px';
     p.style.textAlign='center';
-    p.style.paddingTop='0px';
+    p.style.padding='10px';
     container.appendChild(p);
 })
 // for clicking btn 04
@@ -106,7 +106,7 @@ document.getElementById('Completed-btn-4').addEventListener('click',function(){
     const convertedNum2=parseInt(num2);
     const substract=convertedNum1-1;
     const addition=convertedNum2+1;
-
+    alert('Board updated successfully');
     document.getElementById('substract-num').innerText=substract;
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
@@ -125,7 +125,7 @@ document.getElementById('Completed-btn-4').addEventListener('click',function(){
     p.style.margin='16px';
     p.style.borderRadius='12px';
     p.style.textAlign='center';
-    p.style.paddingTop='0px';
+    p.style.padding='10px';
     container.appendChild(p);
 })
 // for clicking btn 05
@@ -136,7 +136,7 @@ document.getElementById('Completed-btn-5').addEventListener('click',function(){
     const convertedNum2=parseInt(num2);
     const substract=convertedNum1-1;
     const addition=convertedNum2+1;
-
+    alert('Board updated successfully');
     document.getElementById('substract-num').innerText=substract;
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
@@ -155,7 +155,7 @@ document.getElementById('Completed-btn-5').addEventListener('click',function(){
     p.style.margin='16px';
     p.style.borderRadius='12px';
     p.style.textAlign='center';
-    p.style.paddingTop='0px';
+    p.style.padding='10px';
     container.appendChild(p);
 })
 // for clicking btn 06
@@ -166,7 +166,8 @@ document.getElementById('Completed-btn-6').addEventListener('click',function(){
     const convertedNum2=parseInt(num2);
     const substract=convertedNum1-1;
     const addition=convertedNum2+1;
-
+    alert('Board updated successfully');
+    alert('congrats!!! you have finished all the current task')
     document.getElementById('substract-num').innerText=substract;
     document.getElementById('add-num').innerText=addition;
     this.disabled=true;
@@ -185,7 +186,7 @@ document.getElementById('Completed-btn-6').addEventListener('click',function(){
     p.style.margin='16px';
     p.style.borderRadius='12px';
     p.style.textAlign='center';
-    p.style.paddingTop='0px';
+    p.style.padding='10px';
     container.appendChild(p);
 })
 
